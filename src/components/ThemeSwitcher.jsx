@@ -5,9 +5,9 @@ import { XMarkIcon, SunIcon, MoonIcon, SwatchIcon } from '@heroicons/react/24/ou
 import UseLocalStorage from '../hooks/UseLocalStorage';
 
 export const ThemeSwitcher = () => {
-    const [isColorPicking, setIsColorPicking] = UseLocalStorage('react-todo.isColorPicking', false);
-    const [theme, setTheme] = UseLocalStorage("react-todo.theme", "light");
-    const [hue, setHue] = UseLocalStorage("react-todo.hue", 240);
+    const [isColorPicking, setIsColorPicking] = UseLocalStorage('Todo-List.isColorPicking', false);
+    const [theme, setTheme] = UseLocalStorage("Todo-List.theme", "light");
+    const [hue, setHue] = UseLocalStorage("Todo-List.hue", 240);
 
     useEffect(()=>{
         document.documentElement.setAttribute('color-scheme', theme)

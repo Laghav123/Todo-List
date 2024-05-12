@@ -6,7 +6,7 @@ import UseLocalStorage from "./hooks/UseLocalStorage"
 import ThemeSwitcher from './components/ThemeSwitcher'
 
 function App() {
-  const [tasks, setTasks] = UseLocalStorage("react-todo.tasks", []);
+  const [tasks, setTasks] = UseLocalStorage("Todo-List.tasks", []);
   const [editedTask, setEditedTask] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [previousElementFocused, setPreviousElementFocused] = useState(null);
